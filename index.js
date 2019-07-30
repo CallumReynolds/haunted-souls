@@ -46,6 +46,18 @@ function jordanSound() {
   }, 100);
 }
 
+function jakeSound() {
+  var jak = new Audio("sounds/jakeScary.mp3");
+  jak.play();
+
+  var z = document.getElementById("s");
+
+  z.classList.add("pressed");
+  setTimeout(function() {
+    z.classList.remove("pressed");
+  }, 100);
+}
+
 
 function makeSound(key){
 
@@ -61,8 +73,8 @@ function makeSound(key){
     break;
 
   case "s":
-    var tom3 = new Audio("sounds/tom-3.mp3");
-    tom3.play();
+    var jak = new Audio("sounds/jakeScary.mp3");
+    jak.play();
     break;
 
   case "d":
